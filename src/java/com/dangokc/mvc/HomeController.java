@@ -16,9 +16,8 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class HomeController {
     
-    @RequestMapping(value="/home")
-    @ResponseBody
-    public String message(){
-        return "Huy Dang";
+    @RequestMapping("/auth")
+    public String routeToLoginPage(){
+        return "login";
     }
 }
